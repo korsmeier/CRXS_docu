@@ -8,4 +8,7 @@ doxygen Doxyfile
 cp -r html ../..
 cd ../..
 rm -rf soft
+git add .
+git commit -am "Updated documentation"
+git push
 
