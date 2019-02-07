@@ -70,7 +70,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
 Introduction</h1>
-<p>This software package is developed to easily calculate cross sections (XS) for the production of antiprotons and antideuteron as required in cosmic-ray (CR) physics. The package is based on c++ and builds all functions into a library. Furthermore, it provides an interface to python 3.</p>
+<p>This software package is developed to easily calculate cross sections (XS) for the production of antiprotons and antideuteron as required in cosmic-ray (CR) physics. The package is based on c++ and builds all functions into a library. Furthermore, it provides an interface to python.</p>
 <p>This software package provides:</p><ul>
 <li>different CR parametrizations of the Lorentz invariant XSs</li>
 <li>functions to transform the XSs to the ISM (LAB) frame</li>
@@ -84,12 +84,13 @@ Step 1: Prerequisits</h2>
 <li>gsl</li>
 <li>cmake</li>
 <li>swig (optional)</li>
-<li>python 3 (optional)<ul>
+<li>python 2 (optional)</li>
+<li>python 3 (optional)</li>
+</ul>
+<p>If you install the python package make sure your python version contains the following packages:</p><ul>
 <li>numpy</li>
 <li>scipy</li>
 <li>matplotlib</li>
-</ul>
-</li>
 </ul>
 <h2><a class="anchor" id="step2"></a>
 Step 2: Get Software</h2>
@@ -98,16 +99,25 @@ Step 2: Get Software</h2>
 <h2><a class="anchor" id="step3"></a>
 Step 3: Build software</h2>
 <p>The c++ library is build with cmake and the python interface is created by swig. All commands to build the software are summarised in the Makefile. If you want to build everything, simply use</p>
-<p>$ make</p>
-<p>Otherwise you can use the options: 1) cpp_only, to build only the c++ library 2) example, to build the example.cpp which links to the CRXS library 3) debug, to build the c++ library with debug symbols</p>
-<p>To uninstall everything use</p>
-<p>$ make clean</p>
-<h2><a class="anchor" id="step4"></a>
+<div class="fragment"><div class="line">$ make</div></div><!-- fragment --><p>Otherwise you can use the options:</p><ol type="1">
+<li>build, to build only the c++ library</li>
+<li>example, to build the example.cpp which links to the CRXS library</li>
+<li>debug, to build the c++ library with debug symbols</li>
+</ol>
+<p>If you want to build only the python 2 or 3 use:</p>
+<div class="fragment"><div class="line">$ make build</div><div class="line">$ make python</div></div><!-- fragment --><p>or</p>
+<div class="fragment"><div class="line">$ make build</div><div class="line">$ make python_three</div></div><!-- fragment --><p>To uninstall everything use</p>
+<div class="fragment"><div class="line">$ make clean</div></div><!-- fragment --><p>If you want to link the python package to your site path use the script</p>
+<div class="fragment"><div class="line">$ ./link_python_package.sh</div></div><!-- fragment --><p>and follow the instruction. You have to specify your site path manuelly. To find out your path you may need the command (python -m site).</p>
+<p>If you do not want to link the package to your python version you have to create a symbolic link of the py2 or py3 directory in the directory where you want to use the package.</p>
+<div class="fragment"><div class="line">$ ln -s PATH_TO_CRXS/py2 <a class="code" href="namespace_c_r_x_s.html">CRXS</a></div></div><!-- fragment --><p>To include the package use</p>
+<div class="fragment"><div class="line"><span class="keyword">import</span> <a class="code" href="namespace_c_r_x_s.html">CRXS</a>.XS_wrapper</div><div class="line"><span class="keyword">import</span> <a class="code" href="namespace_c_r_x_s.html">CRXS</a>.XS_tools</div></div><!-- fragment --><h2><a class="anchor" id="step4"></a>
 Step 4: Build project (optional)</h2>
 <p>On a Mac with Xcode you may build a project by 1) creating a folder in the directory cpp (e.g. xcode) and change into this new directory. Then type 2) $ cmake -G Xcode ..</p>
 <p>Now you are ready to start!</p>
 <h1><a class="anchor" id="Examples"></a>
 Examples</h1>
+<p>The are stored in the folder examples</p>
 <ul>
 <li>example.cpp (build it with $ make example)</li>
 <li>example__xs_tools.py</li>
