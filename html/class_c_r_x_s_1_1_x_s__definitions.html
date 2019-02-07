@@ -91,8 +91,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a29964165e8b08ce9df7f46494b2b1884"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a29964165e8b08ce9df7f46494b2b1884">tot_pp__diMauro</a> (double s)</td></tr>
 <tr class="memdesc:a29964165e8b08ce9df7f46494b2b1884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parametrization of the elastic pp cross section.  <a href="#a29964165e8b08ce9df7f46494b2b1884">More...</a><br /></td></tr>
 <tr class="separator:a29964165e8b08ce9df7f46494b2b1884"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5d0bd2b2be0bc73c4ee070317adae47"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#ae5d0bd2b2be0bc73c4ee070317adae47">pbar_overlap_function_projectile</a> (double x_F)</td></tr>
-<tr class="memdesc:ae5d0bd2b2be0bc73c4ee070317adae47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parametrization of the target and projectile overlap function in pbar production.  <a href="#ae5d0bd2b2be0bc73c4ee070317adae47">More...</a><br /></td></tr>
+<tr class="memitem:a9b4d6024e55417a60440839a0f94ee9a"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a9b4d6024e55417a60440839a0f94ee9a">inv_pp_p_CM__Anderson</a> (double s, double E_p, double pT_p, double *C_array=Dummy, int len_C_array=-1)</td></tr>
+<tr class="memdesc:a9b4d6024e55417a60440839a0f94ee9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parametrization of the target and projectile overlap function in pbar production.  <a href="#a9b4d6024e55417a60440839a0f94ee9a">More...</a><br /></td></tr>
+<tr class="separator:a9b4d6024e55417a60440839a0f94ee9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d0bd2b2be0bc73c4ee070317adae47"><td class="memItemLeft" align="right" valign="top"><a id="ae5d0bd2b2be0bc73c4ee070317adae47"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>pbar_overlap_function_projectile</b> (double x_F)</td></tr>
 <tr class="separator:ae5d0bd2b2be0bc73c4ee070317adae47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada81aed75a8bcc52b3bc88da200457f2"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#ada81aed75a8bcc52b3bc88da200457f2">pbar_overlap_function_target</a> (double x_F)</td></tr>
 <tr class="memdesc:ada81aed75a8bcc52b3bc88da200457f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parametrization of the target and target overlap function in pbar production.  <a href="#ada81aed75a8bcc52b3bc88da200457f2">More...</a><br /></td></tr>
@@ -289,6 +292,80 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><b>Dummy</b> [1
 
 </div>
 </div>
+<a id="a9b4d6024e55417a60440839a0f94ee9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b4d6024e55417a60440839a0f94ee9a">&#9670;&nbsp;</a></span>inv_pp_p_CM__Anderson()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CRXS::XS_definitions::inv_pp_p_CM__Anderson </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>E_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pT_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>C_array</em> = <code>Dummy</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len_C_array</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parametrization of the target and projectile overlap function in pbar production. </p>
+<p>Taken from: NA49; Inclusive production of protons, anti-protons, neutrons, deuterons and tritons in p+C collisions at 158 GeV/c beam momentum; arXiv:1207.6520v3</p>
+<p>Fig. 69, Tab. 14</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double</td><td>x_F Feynman parameter p/p_max. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double Overlap function for projectileParametrization of the invariant proton scattering crosssection from pp in CMF</dd></dl>
+<p>Taken from: Anderson, et al.; 1967; PROTON AND PION SPECTRA FROM PROTON-PROTON INTERACTIONS AT 10, 20, AND 30 BeV/c*; DOI: <a href="https://doi.org/10.1103/PhysRevLett.19.198">https://doi.org/10.1103/PhysRevLett.19.198</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double</td><td>s CM energy. </td></tr>
+    <tr><td class="paramname">doulbe</td><td>E_p Energy of the scattered proton in CMF </td></tr>
+    <tr><td class="paramname">doulbe</td><td>pT_p Transverse momentum of the scattered proton in CMF. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1dfec716b284c7c71f3d342f63ee8a38"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1dfec716b284c7c71f3d342f63ee8a38">&#9670;&nbsp;</a></span>inv_pp_pbar_CM__diMauro()</h2>
 
@@ -430,43 +507,6 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><b>Dummy</b> [1
 
 </div>
 </div>
-<a id="ae5d0bd2b2be0bc73c4ee070317adae47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5d0bd2b2be0bc73c4ee070317adae47">&#9670;&nbsp;</a></span>pbar_overlap_function_projectile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double CRXS::XS_definitions::pbar_overlap_function_projectile </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>x_F</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Parametrization of the target and projectile overlap function in pbar production. </p>
-<p>Taken from: NA49; Inclusive production of protons, anti-protons, neutrons, deuterons and tritons in p+C collisions at 158 GeV/c beam momentum; arXiv:1207.6520v3</p>
-<p>Fig. 69, Tab. 14</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">double</td><td>x_F Feynman parameter p/p_max. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>double Overlap function for projectile </dd></dl>
-
-</div>
-</div>
 <a id="ada81aed75a8bcc52b3bc88da200457f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada81aed75a8bcc52b3bc88da200457f2">&#9670;&nbsp;</a></span>pbar_overlap_function_target()</h2>
 
@@ -541,8 +581,8 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><b>Dummy</b> [1
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/usr/local/korsmeier/xs_example/soft/cpp/src/<a class="el" href="xs__definitions_8h_source.html">xs_definitions.h</a></li>
-<li>/usr/local/korsmeier/xs_example/soft/cpp/src/xs_definitions.cxx</li>
+<li>/usr/local/korsmeier/MKastro/update_docu/CRXS_docu/soft/cpp/src/<a class="el" href="xs__definitions_8h_source.html">xs_definitions.h</a></li>
+<li>/usr/local/korsmeier/MKastro/update_docu/CRXS_docu/soft/cpp/src/xs_definitions.cxx</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

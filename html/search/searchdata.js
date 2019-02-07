@@ -1,8 +1,8 @@
 var indexSectionsWithContent =
 {
-  0: "cdefipstx",
-  1: "x",
-  2: "sx",
+  0: "_cdefipstx",
+  1: "_cpsx",
+  2: "cpx",
   3: "cdefipt",
   4: "d"
 };

@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['xs',['XS',['../class_c_r_x_s_1_1_x_s.html',1,'CRXS']]],
-  ['xs_5fdefinitions',['XS_definitions',['../class_c_r_x_s_1_1_x_s__definitions.html',1,'CRXS']]],
-  ['xs_5ftools',['XS_tools',['../namespace_x_s__tools.html',1,'']]],
-  ['xs_5fwrapper',['XS_wrapper',['../namespace_x_s__wrapper.html',1,'']]]
+  ['tot_5fpp_5f_5fdimauro',['tot_pp__diMauro',['../class_c_r_x_s_1_1_x_s__definitions.html#a29964165e8b08ce9df7f46494b2b1884',1,'CRXS::XS_definitions']]]
 ];
