@@ -116,15 +116,15 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <tr class="memitem:aff1672d3acbc91ed2ad6caf9a98d8518"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s.html#aff1672d3acbc91ed2ad6caf9a98d8518">inv_AA_Dbar_CM</a> (double s, double xF_Dbar, double pT_Dbar, int A_projectile, int N_projectile, int A_target, int N_target, int parametrization, int coalescence)</td></tr>
 <tr class="memdesc:aff1672d3acbc91ed2ad6caf9a98d8518"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invariant antideuteron production cross section for general projectile and target nucleus for different <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> parametrization.  <a href="#aff1672d3acbc91ed2ad6caf9a98d8518">More...</a><br /></td></tr>
 <tr class="separator:aff1672d3acbc91ed2ad6caf9a98d8518"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaef2a53aa0afd171ab5b763c17a58cb7"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s.html#aaef2a53aa0afd171ab5b763c17a58cb7">inv_AA_Dbar_LAB</a> (double Tn_proj_LAB, double T_Dbar_LAB, double eta_LAB, int A_projectile, int N_projectile, int A_target, int N_target, int parametrization, int coalescence)</td></tr>
-<tr class="memdesc:aaef2a53aa0afd171ab5b763c17a58cb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invariant antideuteron production cross section for general projectile and target nucleus for different <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> parametrization as function of LAB frame kinetic variables.  <a href="#aaef2a53aa0afd171ab5b763c17a58cb7">More...</a><br /></td></tr>
-<tr class="separator:aaef2a53aa0afd171ab5b763c17a58cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc8c9857aab928ad44bc2e543018319"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s.html#aefc8c9857aab928ad44bc2e543018319">inv_AA_Dbar_LAB</a> (double Tn_proj_LAB, double Tn_Dbar_LAB, double eta_LAB, int A_projectile, int N_projectile, int A_target, int N_target, int parametrization, int coalescence)</td></tr>
+<tr class="memdesc:aefc8c9857aab928ad44bc2e543018319"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invariant antideuteron production cross section for general projectile and target nucleus for different <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> parametrization as function of LAB frame kinetic variables.  <a href="#aefc8c9857aab928ad44bc2e543018319">More...</a><br /></td></tr>
+<tr class="separator:aefc8c9857aab928ad44bc2e543018319"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad61eb5fb0590a3d52de195314e4dc92a"><td class="memItemLeft" align="right" valign="top"><a id="ad61eb5fb0590a3d52de195314e4dc92a"></a>
 static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s.html#ad61eb5fb0590a3d52de195314e4dc92a">integrand__dE_AA_Dbar_LAB</a> (double eta_LAB, void *parameters)</td></tr>
 <tr class="memdesc:ad61eb5fb0590a3d52de195314e4dc92a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for inv_AA_Dbar_LAB. <br /></td></tr>
 <tr class="separator:ad61eb5fb0590a3d52de195314e4dc92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a176d20a500e35973453b46ebc107c83e"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s.html#a176d20a500e35973453b46ebc107c83e">dEn_AA_Dbar_LAB</a> (double Tn_proj_LAB, double Tn_Dbar_LAB, int A_projectile=1, int N_projectile=0, int A_target=1, int N_target=0, int parametrization=KORSMEIER_II, int coalescence=ENERGY_DEP__VAN_DOETINCHEM)</td></tr>
-<tr class="memdesc:a176d20a500e35973453b46ebc107c83e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energy-differential antideuteron production cross section for general projectile and target nucleus for different <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> parametrization as function of LAB frame kinetic variables.  <a href="#a176d20a500e35973453b46ebc107c83e">More...</a><br /></td></tr>
+<tr class="memdesc:a176d20a500e35973453b46ebc107c83e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energy-differential antideuteron production cross section for general projectile and target nucleus for different <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> parametrization as function of LAB frame kinetic variables. The cross section contains the contribution from antineutrons and antihyperons. In the case of DI_MAURO parametrizations the antihyperon contribution is set to 0. The nuclear scaling for AA initial states is done as explained in <a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a65d5284b5ab45873598181e9380885e9" title="Parametrization of the nuclear scaling factor. ">XS_definitions::factor__AA</a>.  <a href="#a176d20a500e35973453b46ebc107c83e">More...</a><br /></td></tr>
 <tr class="separator:a176d20a500e35973453b46ebc107c83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -445,7 +445,10 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 </div><div class="memdoc">
 
 <p>Energy-differential antiproton production cross section including antineutrons and antihyperons for general projectile and target nucleus and for different <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> parametrization as function of LAB frame kinetic variables. This cross section is integrated over all angles. </p>
-<p>This function should only be used for the parametrizations: Winkler, Korsmeier_I and Korsmeier_II. For diMauro apply a global factor 2.3 instead.</p>
+<p>Depending on the parametrization, taken from: Korsmeier, et al.; 2018; Production cross sections of cosmic antiprotons in the light of new data from the NA61 and LHCb experiments; DOI: 10.1103/PhysRevD.97.103019</p>
+<p>taken from: Winkler, M. W.; 2017; Cosmic Ray Antiprotons at High Energies; arXiv:1701.04866</p>
+<p>For di Mauro we apply a global factor 2.3 instead.</p>
+<p>In the case of di Mauro parametrizations the antihyperon contribution is set to 0. The nuclear scaling for AA initial states is done as explained in <a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a65d5284b5ab45873598181e9380885e9" title="Parametrization of the nuclear scaling factor. ">XS_definitions::factor__AA</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">double</td><td>Tn_proj_LAB Kinetic energy per nucleus of the prjectile (in the LAB frame) </td></tr>
@@ -532,7 +535,7 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 </table>
 </div><div class="memdoc">
 
-<p>Energy-differential antideuteron production cross section for general projectile and target nucleus for different <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> parametrization as function of LAB frame kinetic variables. </p>
+<p>Energy-differential antideuteron production cross section for general projectile and target nucleus for different <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> parametrization as function of LAB frame kinetic variables. The cross section contains the contribution from antineutrons and antihyperons. In the case of DI_MAURO parametrizations the antihyperon contribution is set to 0. The nuclear scaling for AA initial states is done as explained in <a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a65d5284b5ab45873598181e9380885e9" title="Parametrization of the nuclear scaling factor. ">XS_definitions::factor__AA</a>. </p>
 <p>This cross section is integrated over all angles.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -662,6 +665,10 @@ We recommend option 2)
 
 The parameter p_coal is defined as abs(p_proton - p_neutron)/2. (Note that there is also a different notation,
 without the factor 2., in the literature)
+
+The cross section contains the contribution from antineutrons and antihyperons.
+In the case of DI_MAURO parametrizations the antihyperon contribution is set to 0.
+The nuclear scaling for AA initial states is done as explained in XS_definitions::factor__AA.
 </pre><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">double</td><td>s CM energy, squared (in the nucleon-nucleon frame). </td></tr>
@@ -680,8 +687,8 @@ without the factor 2., in the literature)
 
 </div>
 </div>
-<a id="aaef2a53aa0afd171ab5b763c17a58cb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaef2a53aa0afd171ab5b763c17a58cb7">&#9670;&nbsp;</a></span>inv_AA_Dbar_LAB()</h2>
+<a id="aefc8c9857aab928ad44bc2e543018319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefc8c9857aab928ad44bc2e543018319">&#9670;&nbsp;</a></span>inv_AA_Dbar_LAB()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -699,7 +706,7 @@ without the factor 2., in the literature)
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>T_Dbar_LAB</em>, </td>
+          <td class="paramname"><em>Tn_Dbar_LAB</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -760,7 +767,7 @@ without the factor 2., in the literature)
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">double</td><td>Tn_proj_LAB Kinetic energy per nucleus of the prjectile (in the LAB frame) </td></tr>
-    <tr><td class="paramname">doulbe</td><td>T_Dbar_LAB Kinetic energy of the antideuteron (in the LAB frame) </td></tr>
+    <tr><td class="paramname">doulbe</td><td>Tn_Dbar_LAB Kinetic energy of the antideuteron (in the LAB frame) </td></tr>
     <tr><td class="paramname">doulbe</td><td>eta_LAB Pseudo rapidity of the antideuteron (in the LAB frame) </td></tr>
     <tr><td class="paramname">int</td><td>A_projectile Mass number of the projectile </td></tr>
     <tr><td class="paramname">int</td><td>N_projectile Number of neutrons in the projectile </td></tr>

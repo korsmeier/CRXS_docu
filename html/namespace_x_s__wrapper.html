@@ -90,10 +90,10 @@ Functions</h2></td></tr>
 <tr class="separator:a1d20f90b54335419bea361ce7bf8da1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97c9f4dd5e7c034b3aadf36107556618"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_x_s__wrapper.html#a97c9f4dd5e7c034b3aadf36107556618">inv_AA_Dbar_CM</a> (s, xF, pT_Dbar, A_projectile=1, N_projectile=0, A_target=1, N_target=0, parametrization='KORSMEIER_II', coalescence='ENERGY_DEP__VAN_DOETINCHEM')</td></tr>
 <tr class="separator:a97c9f4dd5e7c034b3aadf36107556618"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebc45cfcc993d5b496b14ee7037aa99e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_x_s__wrapper.html#aebc45cfcc993d5b496b14ee7037aa99e">inv_AA_Dbar_LAB</a> (Tn_proj_LAB, T_Dbar_LAB, eta_LAB, A_projectile=1, N_projectile=0, A_target=1, N_target=0, parametrization='KORSMEIER_II', coalescence='ENERGY_DEP__VAN_DOETINCHEM')</td></tr>
-<tr class="separator:aebc45cfcc993d5b496b14ee7037aa99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fec0dbb4480818987571e121394df68"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_x_s__wrapper.html#a5fec0dbb4480818987571e121394df68">dEn_AA_Dbar_LAB</a> (Tn_proj_LAB, T_Dbar_LAB, A_projectile=1, N_projectile=0, A_target=1, N_target=0, parametrization='KORSMEIER_II', coalescence='ENERGY_DEP__VAN_DOETINCHEM')</td></tr>
-<tr class="separator:a5fec0dbb4480818987571e121394df68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e3df28b41229334968e14313956adf"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_x_s__wrapper.html#ad1e3df28b41229334968e14313956adf">inv_AA_Dbar_LAB</a> (Tn_proj_LAB, Tn_Dbar_LAB, eta_LAB, A_projectile=1, N_projectile=0, A_target=1, N_target=0, parametrization='KORSMEIER_II', coalescence='ENERGY_DEP__VAN_DOETINCHEM')</td></tr>
+<tr class="separator:ad1e3df28b41229334968e14313956adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b64142f970ebf529817ab9fee9e147b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_x_s__wrapper.html#a2b64142f970ebf529817ab9fee9e147b">dEn_AA_Dbar_LAB</a> (Tn_proj_LAB, Tn_Dbar_LAB, A_projectile=1, N_projectile=0, A_target=1, N_target=0, parametrization='KORSMEIER_II', coalescence='ENERGY_DEP__VAN_DOETINCHEM')</td></tr>
+<tr class="separator:a2b64142f970ebf529817ab9fee9e147b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -327,8 +327,8 @@ dictionary&#160;</td><td class="memItemRight" valign="bottom"><b>_coalescence</b
     \return double XS              Cross section in mbarn/GeV</pre> 
 </div>
 </div>
-<a id="a5fec0dbb4480818987571e121394df68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fec0dbb4480818987571e121394df68">&#9670;&nbsp;</a></span>dEn_AA_Dbar_LAB()</h2>
+<a id="a2b64142f970ebf529817ab9fee9e147b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b64142f970ebf529817ab9fee9e147b">&#9670;&nbsp;</a></span>dEn_AA_Dbar_LAB()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -343,7 +343,7 @@ dictionary&#160;</td><td class="memItemRight" valign="bottom"><b>_coalescence</b
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>T_Dbar_LAB</em>, </td>
+          <td class="paramname"><em>Tn_Dbar_LAB</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -515,13 +515,13 @@ dictionary&#160;</td><td class="memItemRight" valign="bottom"><b>_coalescence</b
     \param int    A_target        Mass number of the target
     \param int    N_target        Number of neutrons in the target
     \param string parametrization Cross section parametrization [KORSMEIER_II (default), KORSMEIER_I, WINKLER, DI_MAURO_I, DI_MAURO_II]
-    \param string coalescence     Coalescence model, from[FIXED_P0 (default), ENERGY_DEP__VAN_DOETINCHEM], cf. inv_AA_Dbar_CM
+    \param string coalescence     Coalescence model, from[FIXED_P0, ENERGY_DEP__VAN_DOETINCHEM (default)], cf. inv_AA_Dbar_CM
     
     \return double XS             Cross section in mbarn/GeV^2</pre> 
 </div>
 </div>
-<a id="aebc45cfcc993d5b496b14ee7037aa99e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebc45cfcc993d5b496b14ee7037aa99e">&#9670;&nbsp;</a></span>inv_AA_Dbar_LAB()</h2>
+<a id="ad1e3df28b41229334968e14313956adf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1e3df28b41229334968e14313956adf">&#9670;&nbsp;</a></span>inv_AA_Dbar_LAB()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -536,7 +536,7 @@ dictionary&#160;</td><td class="memItemRight" valign="bottom"><b>_coalescence</b
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>T_Dbar_LAB</em>, </td>
+          <td class="paramname"><em>Tn_Dbar_LAB</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -591,7 +591,7 @@ dictionary&#160;</td><td class="memItemRight" valign="bottom"><b>_coalescence</b
     as function of LAB frame kinetic variables
     
     \param double Tn_proj_LAB      Kinetic energy per nucleus of the prjectile (in the LAB frame)
-    \param doulbe T_Dbar_LAB       Kinetic energy of the antideuteron (in the LAB frame)
+    \param doulbe Tn_Dbar_LAB      Kinetic energy of the antideuteron (in the LAB frame)
     \param doulbe eta_LAB          Pseudo rapidity of the antideuteron (in the LAB frame)
     \param int    A_projectile     Mass number of the projectile
     \param int    N_projectile     Number of neutrons in the projectile
