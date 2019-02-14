@@ -126,6 +126,18 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <tr class="memitem:a176d20a500e35973453b46ebc107c83e"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s.html#a176d20a500e35973453b46ebc107c83e">dEn_AA_Dbar_LAB</a> (double Tn_proj_LAB, double Tn_Dbar_LAB, int A_projectile=1, int N_projectile=0, int A_target=1, int N_target=0, int parametrization=KORSMEIER_II, int coalescence=ENERGY_DEP__VAN_DOETINCHEM)</td></tr>
 <tr class="memdesc:a176d20a500e35973453b46ebc107c83e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energy-differential antideuteron production cross section for general projectile and target nucleus for different <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> parametrization as function of LAB frame kinetic variables. The cross section contains the contribution from antineutrons and antihyperons. In the case of DI_MAURO parametrizations the antihyperon contribution is set to 0. The nuclear scaling for AA initial states is done as explained in <a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a65d5284b5ab45873598181e9380885e9" title="Parametrization of the nuclear scaling factor. ">XS_definitions::factor__AA</a>.  <a href="#a176d20a500e35973453b46ebc107c83e">More...</a><br /></td></tr>
 <tr class="separator:a176d20a500e35973453b46ebc107c83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1456ba9a0ea5331286f2be953b7ec6f3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s.html#a1456ba9a0ea5331286f2be953b7ec6f3">Set_SELF_C_parameters_diMauro</a> (double *C)</td></tr>
+<tr class="memdesc:a1456ba9a0ea5331286f2be953b7ec6f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the parameter values of the di Mauro parametrization yourself.  <a href="#a1456ba9a0ea5331286f2be953b7ec6f3">More...</a><br /></td></tr>
+<tr class="separator:a1456ba9a0ea5331286f2be953b7ec6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8420c420fbc73235a48889e89912492"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s.html#aa8420c420fbc73235a48889e89912492">Set_SELF_C_parameters_Winkler</a> (double *C)</td></tr>
+<tr class="memdesc:aa8420c420fbc73235a48889e89912492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the parameter values of the Winkler parametrization yourself.  <a href="#aa8420c420fbc73235a48889e89912492">More...</a><br /></td></tr>
+<tr class="separator:aa8420c420fbc73235a48889e89912492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9130f7647d958cee54d8f69c9bafdf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s.html#a2d9130f7647d958cee54d8f69c9bafdf">Set_SELF_D_parameters_diMauro</a> (double *D)</td></tr>
+<tr class="memdesc:a2d9130f7647d958cee54d8f69c9bafdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the parameter values of the di Mauro parametrization yourself.  <a href="#a2d9130f7647d958cee54d8f69c9bafdf">More...</a><br /></td></tr>
+<tr class="separator:a2d9130f7647d958cee54d8f69c9bafdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14e40ac24aa990d6ae1be0f22f723063"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s.html#a14e40ac24aa990d6ae1be0f22f723063">Set_SELF_D_parameters_Winkler</a> (double *D)</td></tr>
+<tr class="memdesc:a14e40ac24aa990d6ae1be0f22f723063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the parameter values of the Winkler parametrization yourself.  <a href="#a14e40ac24aa990d6ae1be0f22f723063">More...</a><br /></td></tr>
+<tr class="separator:a14e40ac24aa990d6ae1be0f22f723063"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac5b0f251e69e82d34c617ba239be9120"></a>
@@ -372,7 +384,7 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
     <tr><td class="paramname">int</td><td>N_projectile Number of neutrons in the projectile </td></tr>
     <tr><td class="paramname">int</td><td>A_target Mass number of the target </td></tr>
     <tr><td class="paramname">int</td><td>N_target Number of neutrons in the target </td></tr>
-    <tr><td class="paramname">int</td><td>parametrization Cross section parametrization, enum from[KORSMEIER_II (default), KORSMEIER_I, WINKLER, DI_MAURO_I, DI_MAURO_II]</td></tr>
+    <tr><td class="paramname">int</td><td>parametrization Cross section parametrization, enum from[KORSMEIER_II (default), KORSMEIER_I, WINKLER, DI_MAURO_I, DI_MAURO_II, WINKLER_SELF, DI_MAURO_SELF]</td></tr>
   </table>
   </dd>
 </dl>
@@ -457,7 +469,7 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
     <tr><td class="paramname">int</td><td>N_projectile Number of neutrons in the projectile </td></tr>
     <tr><td class="paramname">int</td><td>A_target Mass number of the target </td></tr>
     <tr><td class="paramname">int</td><td>N_target Number of neutrons in the target </td></tr>
-    <tr><td class="paramname">int</td><td>parametrization Cross section parametrization, enum from[KORSMEIER_II (default), KORSMEIER_I, WINKLER, DI_MAURO_I, DI_MAURO_II]</td></tr>
+    <tr><td class="paramname">int</td><td>parametrization Cross section parametrization, enum from[KORSMEIER_II (default), KORSMEIER_I, WINKLER, DI_MAURO_I, DI_MAURO_II, WINKLER_SELF, DI_MAURO_SELF]</td></tr>
   </table>
   </dd>
 </dl>
@@ -541,7 +553,7 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
   <table class="params">
     <tr><td class="paramname">double</td><td>Tn_proj_LAB Kinetic energy per nucleus of the prjectile (in the LAB frame) </td></tr>
     <tr><td class="paramname">doulbe</td><td>Tn_Dbar_LAB Kinetic energy per nucleus of the antideuteron (in the LAB frame) </td></tr>
-    <tr><td class="paramname">int</td><td>A_projectile Mass number of the projectile </td></tr>
+    <tr><td class="paramname">int</td><td>A_projectile Mass number of the projectile, if A_projectile is negative we use an antiproton as projectile </td></tr>
     <tr><td class="paramname">int</td><td>N_projectile Number of neutrons in the projectile </td></tr>
     <tr><td class="paramname">int</td><td>A_target Mass number of the target </td></tr>
     <tr><td class="paramname">int</td><td>N_target Number of neutrons in the target </td></tr>
@@ -666,6 +678,14 @@ We recommend option 2)
 The parameter p_coal is defined as abs(p_proton - p_neutron)/2. (Note that there is also a different notation,
 without the factor 2., in the literature)
 
+
+If the massnumber@param int A_projectile is set to -1 we assume an antiproton projectile. In this case
+the antiproton production cross section is replaced and approximated by the cross section from
+            Anderson, et al.; 1967;
+            PROTON AND PION SPECTRA FROM PROTON-PROTON INTERACTIONS AT 10, 20, AND 30 BeV/c*;
+            DOI: https://doi.org/10.1103/PhysRevLett.19.198 .
+The assumption is that the "p p -&gt; p" XS is equal to the "pbar p -&gt; pbar" XS.
+
 The cross section contains the contribution from antineutrons and antihyperons.
 In the case of DI_MAURO parametrizations the antihyperon contribution is set to 0.
 The nuclear scaling for AA initial states is done as explained in XS_definitions::factor__AA.
@@ -674,7 +694,7 @@ The nuclear scaling for AA initial states is done as explained in XS_definitions
     <tr><td class="paramname">double</td><td>s CM energy, squared (in the nucleon-nucleon frame). </td></tr>
     <tr><td class="paramname">doulbe</td><td>xF Feynman scaling (2*pL_pbar/sqrt(s) in CMF, i.e. the nucleon-nucleon frame) </td></tr>
     <tr><td class="paramname">doulbe</td><td>pT_Dbar Transverse momentum of the antideuteron </td></tr>
-    <tr><td class="paramname">int</td><td>A_projectile Mass number of the projectile </td></tr>
+    <tr><td class="paramname">int</td><td>A_projectile Mass number of the projectile, if A_projectile is negative we use an antiproton as projectile </td></tr>
     <tr><td class="paramname">int</td><td>N_projectile Number of neutrons in the projectile </td></tr>
     <tr><td class="paramname">int</td><td>A_target Mass number of the target </td></tr>
     <tr><td class="paramname">int</td><td>N_target Number of neutrons in the target </td></tr>
@@ -769,7 +789,7 @@ The nuclear scaling for AA initial states is done as explained in XS_definitions
     <tr><td class="paramname">double</td><td>Tn_proj_LAB Kinetic energy per nucleus of the prjectile (in the LAB frame) </td></tr>
     <tr><td class="paramname">doulbe</td><td>Tn_Dbar_LAB Kinetic energy of the antideuteron (in the LAB frame) </td></tr>
     <tr><td class="paramname">doulbe</td><td>eta_LAB Pseudo rapidity of the antideuteron (in the LAB frame) </td></tr>
-    <tr><td class="paramname">int</td><td>A_projectile Mass number of the projectile </td></tr>
+    <tr><td class="paramname">int</td><td>A_projectile Mass number of the projectile, if A_projectile is negative we use an antiproton as projectile </td></tr>
     <tr><td class="paramname">int</td><td>N_projectile Number of neutrons in the projectile </td></tr>
     <tr><td class="paramname">int</td><td>A_target Mass number of the target </td></tr>
     <tr><td class="paramname">int</td><td>N_target Number of neutrons in the target </td></tr>
@@ -1038,7 +1058,7 @@ The nuclear scaling for AA initial states is done as explained in XS_definitions
     <tr><td class="paramname">int</td><td>N_projectile Number of neutrons in the projectile </td></tr>
     <tr><td class="paramname">int</td><td>A_target Mass number of the target </td></tr>
     <tr><td class="paramname">int</td><td>N_target Number of neutrons in the target </td></tr>
-    <tr><td class="paramname">int</td><td>parametrization Cross section parametrization, enum from[KORSMEIER_II (default), KORSMEIER_I, WINKLER, DI_MAURO_I, DI_MAURO_II]</td></tr>
+    <tr><td class="paramname">int</td><td>parametrization Cross section parametrization, enum from[KORSMEIER_II (default), KORSMEIER_I, WINKLER, DI_MAURO_I, DI_MAURO_II, WINKLER_SELF, DI_MAURO_SELF]</td></tr>
   </table>
   </dd>
 </dl>
@@ -1168,6 +1188,160 @@ The nuclear scaling for AA initial states is done as explained in XS_definitions
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>double Coalescence momentum </dd></dl>
+
+</div>
+</div>
+<a id="a1456ba9a0ea5331286f2be953b7ec6f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1456ba9a0ea5331286f2be953b7ec6f3">&#9670;&nbsp;</a></span>Set_SELF_C_parameters_diMauro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRXS::XS::Set_SELF_C_parameters_diMauro </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>C</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function to set the parameter values of the di Mauro parametrization yourself. </p>
+<p>The nameing of the parameters corresponds to the definition di Mauro, et al.; 2014; A new evaluation of the antiproton production cross section for cosmic ray studies; DOI: 10.1103/PhysRevD.90.085017 in Eq. (13). The input parameter array double* C is expected to have a length of 19 and contains:</p><ul>
+<li>C[0] is a dummy</li>
+<li>C[1] to C[11] are the variables of Eq. (13)</li>
+<li>C[12] to C[15] are the isospin variables, this is described as in Winkler (2017), his variables C_1 to C_4</li>
+<li>C[16] to C[18] are the hyperon variables, this is described as in Winkler (2017), his variables C_14 to C_16</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double*</td><td>C Array of parameters, expected length: 19. For details see above. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa8420c420fbc73235a48889e89912492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8420c420fbc73235a48889e89912492">&#9670;&nbsp;</a></span>Set_SELF_C_parameters_Winkler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRXS::XS::Set_SELF_C_parameters_Winkler </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>C</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function to set the parameter values of the Winkler parametrization yourself. </p>
+<p>The nameing of the parameters corresponds to the definition Winkler, M. W.; 2017; Cosmic Ray Antiprotons at High Energies; arXiv:1701.04866 The input parameter array double* C is expected to have a length of 17 and contains:</p><ul>
+<li>C[0] is a dummy</li>
+<li>C[1] to C[16] are the variables named as in Winkler (2017)</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double*</td><td>C Array of parameters, expected length: 17. For details see above. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2d9130f7647d958cee54d8f69c9bafdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d9130f7647d958cee54d8f69c9bafdf">&#9670;&nbsp;</a></span>Set_SELF_D_parameters_diMauro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRXS::XS::Set_SELF_D_parameters_diMauro </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>D</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function to set the parameter values of the di Mauro parametrization yourself. </p>
+<p>The nameing of the parameters corresponds to the definition Korsmeier, et al.; 2018; Production cross sections of cosmic antiprotons in the light of new data from the NA61 and LHCb experiments; DOI: 10.1103/PhysRevD.97.103019 The input parameter array double* D is expected to have a length of 3 and contains:</p><ul>
+<li>D[0] is a dummy</li>
+<li>D[1] and D[2] are the variables named as in Korsmeier, et al.; 2018</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double*</td><td>D Array of parameters, expected length: 3. For details see above. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a14e40ac24aa990d6ae1be0f22f723063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14e40ac24aa990d6ae1be0f22f723063">&#9670;&nbsp;</a></span>Set_SELF_D_parameters_Winkler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRXS::XS::Set_SELF_D_parameters_Winkler </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>D</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function to set the parameter values of the Winkler parametrization yourself. </p>
+<p>The nameing of the parameters corresponds to the definition Korsmeier, et al.; 2018; Production cross sections of cosmic antiprotons in the light of new data from the NA61 and LHCb experiments; DOI: 10.1103/PhysRevD.97.103019 The input parameter array double* D is expected to have a length of 3 and contains:</p><ul>
+<li>D[0] is a dummy</li>
+<li>D[1] and D[2] are the variables named as in Korsmeier, et al.; 2018</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double*</td><td>D Array of parameters, expected length: 3. For details see above. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

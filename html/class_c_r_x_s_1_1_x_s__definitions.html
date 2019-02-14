@@ -91,11 +91,32 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a29964165e8b08ce9df7f46494b2b1884"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a29964165e8b08ce9df7f46494b2b1884">tot_pp__diMauro</a> (double s)</td></tr>
 <tr class="memdesc:a29964165e8b08ce9df7f46494b2b1884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parametrization of the elastic pp cross section.  <a href="#a29964165e8b08ce9df7f46494b2b1884">More...</a><br /></td></tr>
 <tr class="separator:a29964165e8b08ce9df7f46494b2b1884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e217fb456ac9ab5152f099d9a2a21be"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a2e217fb456ac9ab5152f099d9a2a21be">totXS_TableToArray</a> (std::string file, double array[91][4])</td></tr>
+<tr class="memdesc:a2e217fb456ac9ab5152f099d9a2a21be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to read a simple text table.  <a href="#a2e217fb456ac9ab5152f099d9a2a21be">More...</a><br /></td></tr>
+<tr class="separator:a2e217fb456ac9ab5152f099d9a2a21be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd2b4f73d1af90b6eb6651deef52cd4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#afbd2b4f73d1af90b6eb6651deef52cd4">totXS_Read</a> ()</td></tr>
+<tr class="memdesc:afbd2b4f73d1af90b6eb6651deef52cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bool to store whether the tables are alread read.  <a href="#afbd2b4f73d1af90b6eb6651deef52cd4">More...</a><br /></td></tr>
+<tr class="separator:afbd2b4f73d1af90b6eb6651deef52cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b2782f11427f27df301e7695f920bb"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a14b2782f11427f27df301e7695f920bb">totXS_get_interpolation_loglin</a> (double x, double array[91][4])</td></tr>
+<tr class="memdesc:a14b2782f11427f27df301e7695f920bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to interpolate the the <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> tables. Interpolation is linear in log-log.  <a href="#a14b2782f11427f27df301e7695f920bb">More...</a><br /></td></tr>
+<tr class="separator:a14b2782f11427f27df301e7695f920bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab61b6e23c0ab6326e8e270611afd96"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a5ab61b6e23c0ab6326e8e270611afd96">tot_pbarp</a> (double T_pbar)</td></tr>
+<tr class="memdesc:a5ab61b6e23c0ab6326e8e270611afd96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array to store the non-annihilation pbar+D <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a>; column 0: T_pbar in GeV, column 1: <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> in mbarn.  <a href="#a5ab61b6e23c0ab6326e8e270611afd96">More...</a><br /></td></tr>
+<tr class="separator:a5ab61b6e23c0ab6326e8e270611afd96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6713e5d47bc116cb2e596d7c1b962d1b"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a6713e5d47bc116cb2e596d7c1b962d1b">el_pbarp</a> (double T_pbar)</td></tr>
+<tr class="memdesc:a6713e5d47bc116cb2e596d7c1b962d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolation of the elastic pbar+p cross section.  <a href="#a6713e5d47bc116cb2e596d7c1b962d1b">More...</a><br /></td></tr>
+<tr class="separator:a6713e5d47bc116cb2e596d7c1b962d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80326d655e79ff5c17de9e202128699f"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a80326d655e79ff5c17de9e202128699f">tot_pbarD</a> (double T_pbar)</td></tr>
+<tr class="memdesc:a80326d655e79ff5c17de9e202128699f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolation of the total pbar+D cross section.  <a href="#a80326d655e79ff5c17de9e202128699f">More...</a><br /></td></tr>
+<tr class="separator:a80326d655e79ff5c17de9e202128699f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e7278bd542e86bf87a0945359e6274d"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a6e7278bd542e86bf87a0945359e6274d">nar_pbarD</a> (double T_pbar)</td></tr>
+<tr class="memdesc:a6e7278bd542e86bf87a0945359e6274d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolation of the non-annihilating pbar+D cross section.  <a href="#a6e7278bd542e86bf87a0945359e6274d">More...</a><br /></td></tr>
+<tr class="separator:a6e7278bd542e86bf87a0945359e6274d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b4d6024e55417a60440839a0f94ee9a"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a9b4d6024e55417a60440839a0f94ee9a">inv_pp_p_CM__Anderson</a> (double s, double E_p, double pT_p, double *C_array=Dummy, int len_C_array=-1)</td></tr>
-<tr class="memdesc:a9b4d6024e55417a60440839a0f94ee9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parametrization of the target and projectile overlap function in pbar production.  <a href="#a9b4d6024e55417a60440839a0f94ee9a">More...</a><br /></td></tr>
+<tr class="memdesc:a9b4d6024e55417a60440839a0f94ee9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parametrization of the invariant proton scattering crosssection from pp in CMF.  <a href="#a9b4d6024e55417a60440839a0f94ee9a">More...</a><br /></td></tr>
 <tr class="separator:a9b4d6024e55417a60440839a0f94ee9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5d0bd2b2be0bc73c4ee070317adae47"><td class="memItemLeft" align="right" valign="top"><a id="ae5d0bd2b2be0bc73c4ee070317adae47"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>pbar_overlap_function_projectile</b> (double x_F)</td></tr>
+<tr class="memitem:ae5d0bd2b2be0bc73c4ee070317adae47"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#ae5d0bd2b2be0bc73c4ee070317adae47">pbar_overlap_function_projectile</a> (double x_F)</td></tr>
+<tr class="memdesc:ae5d0bd2b2be0bc73c4ee070317adae47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parametrization of the target and projectile overlap function in pbar production.  <a href="#ae5d0bd2b2be0bc73c4ee070317adae47">More...</a><br /></td></tr>
 <tr class="separator:ae5d0bd2b2be0bc73c4ee070317adae47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada81aed75a8bcc52b3bc88da200457f2"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#ada81aed75a8bcc52b3bc88da200457f2">pbar_overlap_function_target</a> (double x_F)</td></tr>
 <tr class="memdesc:ada81aed75a8bcc52b3bc88da200457f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parametrization of the target and target overlap function in pbar production.  <a href="#ada81aed75a8bcc52b3bc88da200457f2">More...</a><br /></td></tr>
@@ -133,6 +154,24 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><b>fMass_deuter
 <tr class="memitem:a2080fa313cdf17dda4e3968f54c65e56"><td class="memItemLeft" align="right" valign="top"><a id="a2080fa313cdf17dda4e3968f54c65e56"></a>
 static double&#160;</td><td class="memItemRight" valign="bottom"><b>fMass_helium3</b> = 0.9382720813*3</td></tr>
 <tr class="separator:a2080fa313cdf17dda4e3968f54c65e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6117c7890da8a6bf578b3cc49d3f3ae"><td class="memItemLeft" align="right" valign="top"><a id="aa6117c7890da8a6bf578b3cc49d3f3ae"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>f_totXS_IsRead</b> = false</td></tr>
+<tr class="separator:aa6117c7890da8a6bf578b3cc49d3f3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68cd9a2fd2c135c638d790e3f774d1a4"><td class="memItemLeft" align="right" valign="top"><a id="a68cd9a2fd2c135c638d790e3f774d1a4"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>fXS__tot_pbarp</b> [91][4]</td></tr>
+<tr class="separator:a68cd9a2fd2c135c638d790e3f774d1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dd4913cb617faf50ec7b1fcbef4cf19"><td class="memItemLeft" align="right" valign="top"><a id="a8dd4913cb617faf50ec7b1fcbef4cf19"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a8dd4913cb617faf50ec7b1fcbef4cf19">fXS__el_pbarp</a> [91][4]</td></tr>
+<tr class="memdesc:a8dd4913cb617faf50ec7b1fcbef4cf19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array to store the total pbar+p <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a>; column 0: T_pbar in GeV, column 1: <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> in mbarn. <br /></td></tr>
+<tr class="separator:a8dd4913cb617faf50ec7b1fcbef4cf19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a607f477b6b582244626fc99a3c30f86c"><td class="memItemLeft" align="right" valign="top"><a id="a607f477b6b582244626fc99a3c30f86c"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a607f477b6b582244626fc99a3c30f86c">fXS__tot_pbarD</a> [91][4]</td></tr>
+<tr class="memdesc:a607f477b6b582244626fc99a3c30f86c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array to store the elastic pbar+p <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a>; column 0: T_pbar in GeV, column 1: <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> in mbarn. <br /></td></tr>
+<tr class="separator:a607f477b6b582244626fc99a3c30f86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9896f88f427a85151720b4e97835686e"><td class="memItemLeft" align="right" valign="top"><a id="a9896f88f427a85151720b4e97835686e"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a9896f88f427a85151720b4e97835686e">fXS__nar_pbarD</a> [91][4]</td></tr>
+<tr class="memdesc:a9896f88f427a85151720b4e97835686e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array to store the total pbar+D <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a>; column 0: T_pbar in GeV, column 1: <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> in mbarn. <br /></td></tr>
+<tr class="separator:a9896f88f427a85151720b4e97835686e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abada8c24c8a893ece1a62176360ac500"><td class="memItemLeft" align="right" valign="top"><a id="abada8c24c8a893ece1a62176360ac500"></a>
 static double&#160;</td><td class="memItemRight" valign="bottom"><b>Korsmeier_I_C1_to_C11</b> [12] = { -1, 3.50193e+00, 5.58513e+00, 3.99553e-02, -2.50716e-01, 2.65053e+00, 3.78145e-02, 4.29478e-02, 2.69520e+00, 0.0, 0.0, 0.0 }</td></tr>
 <tr class="separator:abada8c24c8a893ece1a62176360ac500"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,11 +208,62 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><b>diMauro_I_D1
 <tr class="memitem:a6798524fb9e799a6b7d9a58be3b970f1"><td class="memItemLeft" align="right" valign="top"><a id="a6798524fb9e799a6b7d9a58be3b970f1"></a>
 static double&#160;</td><td class="memItemRight" valign="bottom"><b>diMauro_II_D1_to_D2</b> [3] = { -1, 0.8, 0. }</td></tr>
 <tr class="separator:a6798524fb9e799a6b7d9a58be3b970f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a977cc256d647c484372c87fcd344bce6"><td class="memItemLeft" align="right" valign="top"><a id="a977cc256d647c484372c87fcd344bce6"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>Winkler_SELF_C1_to_C16</b> [17] = { -1, 0.31, 0.30, 21316., 0.9, 5.01767e-02, 7.79045, 1.64809e-01, 0.038, 4.74370e-04, 3.70480e+00, 30.9, -1.74, 0.71, 0.114, 20736., 0.51 }</td></tr>
+<tr class="separator:a977cc256d647c484372c87fcd344bce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9475d2daeb1de4b636cbfc72a5c52f8b"><td class="memItemLeft" align="right" valign="top"><a id="a9475d2daeb1de4b636cbfc72a5c52f8b"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>diMauro_SELF_C1_to_C11</b> [12] = { -1, 3.50193e+00, 5.58513e+00, 3.99553e-02, -2.50716e-01, 2.65053e+00, 3.78145e-02, 4.29478e-02, 2.69520e+00, 0.0, 0.0, 0.0 }</td></tr>
+<tr class="separator:a9475d2daeb1de4b636cbfc72a5c52f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05c102c49ef8cb963cf9085540925ae"><td class="memItemLeft" align="right" valign="top"><a id="ac05c102c49ef8cb963cf9085540925ae"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>diMauro_SELF_C1_to_C16</b> [17] = { -1, 0.31, 0.30, 21316., 0.9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.114, 20736., 0.51 }</td></tr>
+<tr class="separator:ac05c102c49ef8cb963cf9085540925ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b0598bdd2c5e5ab7b38d0ca45747ad"><td class="memItemLeft" align="right" valign="top"><a id="a44b0598bdd2c5e5ab7b38d0ca45747ad"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>Winkler_SELF_D1_to_D2</b> [3] = { -1, 0.828, 0.145 }</td></tr>
+<tr class="separator:a44b0598bdd2c5e5ab7b38d0ca45747ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a645e076c176e7ba4843f8bbcb58acd1f"><td class="memItemLeft" align="right" valign="top"><a id="a645e076c176e7ba4843f8bbcb58acd1f"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>diMauro_SELF_D1_to_D2</b> [3] = { -1, 0.825, 0.167 }</td></tr>
+<tr class="separator:a645e076c176e7ba4843f8bbcb58acd1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d9d287fcf9df506732508b0406181c2"><td class="memItemLeft" align="right" valign="top"><a id="a5d9d287fcf9df506732508b0406181c2"></a>
 static double&#160;</td><td class="memItemRight" valign="bottom"><b>Dummy</b> [1] = { -1 }</td></tr>
 <tr class="separator:a5d9d287fcf9df506732508b0406181c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6713e5d47bc116cb2e596d7c1b962d1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6713e5d47bc116cb2e596d7c1b962d1b">&#9670;&nbsp;</a></span>el_pbarp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CRXS::XS_definitions::el_pbarp </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>T_pbar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Interpolation of the elastic pbar+p cross section. </p>
+<p>Hand-fitted curve to the data collected by the Particle Data Group (PDG). The data and tables of the hand-fitted curve are stored in &lt;CRXS dir&gt;=""&gt;/cpp/data</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double</td><td>T_pbar Kinetic energy of the antiproton (p at rest) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double Cross section in mbarn </dd></dl>
+
+</div>
+</div>
 <a id="aac2a98a653c19dd5fa026887ca6ce2bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aac2a98a653c19dd5fa026887ca6ce2bf">&#9670;&nbsp;</a></span>el_pp__diMauro()</h2>
 
@@ -346,16 +436,7 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><b>Dummy</b> [1
 </table>
 </div><div class="memdoc">
 
-<p>Parametrization of the target and projectile overlap function in pbar production. </p>
-<p>Taken from: NA49; Inclusive production of protons, anti-protons, neutrons, deuterons and tritons in p+C collisions at 158 GeV/c beam momentum; arXiv:1207.6520v3</p>
-<p>Fig. 69, Tab. 14</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">double</td><td>x_F Feynman parameter p/p_max. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>double Overlap function for projectileParametrization of the invariant proton scattering crosssection from pp in CMF</dd></dl>
+<p>Parametrization of the invariant proton scattering crosssection from pp in CMF. </p>
 <p>Taken from: Anderson, et al.; 1967; PROTON AND PION SPECTRA FROM PROTON-PROTON INTERACTIONS AT 10, 20, AND 30 BeV/c*; DOI: <a href="https://doi.org/10.1103/PhysRevLett.19.198">https://doi.org/10.1103/PhysRevLett.19.198</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -509,6 +590,82 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><b>Dummy</b> [1
 
 </div>
 </div>
+<a id="a6e7278bd542e86bf87a0945359e6274d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e7278bd542e86bf87a0945359e6274d">&#9670;&nbsp;</a></span>nar_pbarD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CRXS::XS_definitions::nar_pbarD </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>T_pbar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Interpolation of the non-annihilating pbar+D cross section. </p>
+<p>Hand-fitted curve to the data collected by: </p><pre class="fragment">A. Baldini, V. Flaminio, W. G. Moorhead, and D. R. O. Morrison,
+Total Cross-Sections for Reactions of High Energy Particles,
+edited by S. H., Vol. 12B (SpringerMaterials, 1988).
+</pre><p>The data and tables of the hand-fitted curve are stored in &lt;CRXS dir&gt;=""&gt;/cpp/data</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double</td><td>T_pbar Kinetic energy of the antiproton (D at rest) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double Cross section in mbarn </dd></dl>
+
+</div>
+</div>
+<a id="ae5d0bd2b2be0bc73c4ee070317adae47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5d0bd2b2be0bc73c4ee070317adae47">&#9670;&nbsp;</a></span>pbar_overlap_function_projectile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CRXS::XS_definitions::pbar_overlap_function_projectile </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x_F</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parametrization of the target and projectile overlap function in pbar production. </p>
+<p>Taken from: NA49; Inclusive production of protons, anti-protons, neutrons, deuterons and tritons in p+C collisions at 158 GeV/c beam momentum; arXiv:1207.6520v3</p>
+<p>Fig. 69, Tab. 14</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double</td><td>x_F Feynman parameter p/p_max. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double Overlap function for projectile </dd></dl>
+
+</div>
+</div>
 <a id="ada81aed75a8bcc52b3bc88da200457f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada81aed75a8bcc52b3bc88da200457f2">&#9670;&nbsp;</a></span>pbar_overlap_function_target()</h2>
 
@@ -546,6 +703,79 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><b>Dummy</b> [1
 
 </div>
 </div>
+<a id="a80326d655e79ff5c17de9e202128699f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80326d655e79ff5c17de9e202128699f">&#9670;&nbsp;</a></span>tot_pbarD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CRXS::XS_definitions::tot_pbarD </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>T_pbar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Interpolation of the total pbar+D cross section. </p>
+<p>Hand-fitted curve to the data collected by the Particle Data Group (PDG). The data and tables of the hand-fitted curve are stored in &lt;CRXS dir&gt;=""&gt;/cpp/data</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double</td><td>T_pbar Kinetic energy of the antiproton (D at rest) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double Cross section in mbarn </dd></dl>
+
+</div>
+</div>
+<a id="a5ab61b6e23c0ab6326e8e270611afd96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ab61b6e23c0ab6326e8e270611afd96">&#9670;&nbsp;</a></span>tot_pbarp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CRXS::XS_definitions::tot_pbarp </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>T_pbar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Array to store the non-annihilation pbar+D <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a>; column 0: T_pbar in GeV, column 1: <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> in mbarn. </p>
+<p>Interpolation of the total pbar+p cross section.</p>
+<p>Hand-fitted curve to the data collected by the Particle Data Group (PDG). The data and tables of the hand-fitted curve are stored in &lt;CRXS dir&gt;=""&gt;/cpp/data</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double</td><td>T_pbar Kinetic energy of the antiproton (p at rest) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double Cross section in mbarn </dd></dl>
+
+</div>
+</div>
 <a id="a29964165e8b08ce9df7f46494b2b1884"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a29964165e8b08ce9df7f46494b2b1884">&#9670;&nbsp;</a></span>tot_pp__diMauro()</h2>
 
@@ -579,6 +809,125 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><b>Dummy</b> [1
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>double Cross section in mbarn </dd></dl>
+
+</div>
+</div>
+<a id="a14b2782f11427f27df301e7695f920bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14b2782f11427f27df301e7695f920bb">&#9670;&nbsp;</a></span>totXS_get_interpolation_loglin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CRXS::XS_definitions::totXS_get_interpolation_loglin </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>array</em>[91][4]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function to interpolate the the <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> tables. Interpolation is linear in log-log. </p>
+<p>To be used with the arrays fXS__* </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double</td><td>x Value in column 0 of array. </td></tr>
+    <tr><td class="paramname">double</td><td>array[91][4] Table which is supposed to be interpolated (use column 1). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double Interpolted value </dd></dl>
+
+</div>
+</div>
+<a id="afbd2b4f73d1af90b6eb6651deef52cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbd2b4f73d1af90b6eb6651deef52cd4">&#9670;&nbsp;</a></span>totXS_Read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRXS::XS_definitions::totXS_Read </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Bool to store whether the tables are alread read. </p>
+<p>Function to read all the total <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> tables. </p>
+
+</div>
+</div>
+<a id="a2e217fb456ac9ab5152f099d9a2a21be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e217fb456ac9ab5152f099d9a2a21be">&#9670;&nbsp;</a></span>totXS_TableToArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CRXS::XS_definitions::totXS_TableToArray </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>array</em>[91][4]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function to read a simple text table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">std::string</td><td>file File name of the table. </td></tr>
+    <tr><td class="paramname">double</td><td>array[91][4] Array to store the table entries. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
