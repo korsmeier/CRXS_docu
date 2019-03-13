@@ -1,1 +1,5 @@
 \form#0:\[ E_{\bar{p}} \frac{ d^3 \sigma_{pp}^{(\bar{p})} }{d^3 p_{\bar{p}} } (s, E_{\bar{p}}, p_{T,\bar{p}}) \]
+\form#1:$ d\sigma/dT_{\bar{p}} (p+p\rightarrow\bar{p}+X $
+\form#2:$ d\sigma/dT_{\bar{p}} (p+He\rightarrow\bar{p}+X $
+\form#3:$ d\sigma/dT_{\bar{p}} (He+p\rightarrow\bar{p}+X $
+\form#4:$ d\sigma/dT_{\bar{p}} (He+He\rightarrow\bar{p}+X $
