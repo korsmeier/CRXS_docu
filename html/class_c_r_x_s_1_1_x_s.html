@@ -126,6 +126,9 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <tr class="memitem:a176d20a500e35973453b46ebc107c83e"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s.html#a176d20a500e35973453b46ebc107c83e">dEn_AA_Dbar_LAB</a> (double Tn_proj_LAB, double Tn_Dbar_LAB, int A_projectile=1, int N_projectile=0, int A_target=1, int N_target=0, int parametrization=KORSMEIER_II, int coalescence=ENERGY_DEP__VAN_DOETINCHEM)</td></tr>
 <tr class="memdesc:a176d20a500e35973453b46ebc107c83e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energy-differential antideuteron production cross section for general projectile and target nucleus for different <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> parametrization as function of LAB frame kinetic variables. The cross section contains the contribution from antineutrons and antihyperons. In the case of DI_MAURO parametrizations the antihyperon contribution is set to 0. The nuclear scaling for AA initial states is done as explained in <a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a65d5284b5ab45873598181e9380885e9" title="Parametrization of the nuclear scaling factor. ">XS_definitions::factor__AA</a>.  <a href="#a176d20a500e35973453b46ebc107c83e">More...</a><br /></td></tr>
 <tr class="separator:a176d20a500e35973453b46ebc107c83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985893e1da2505c93461e28b585f5c89"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s.html#a985893e1da2505c93461e28b585f5c89">dEn_DbarA_Dbar_LAB</a> (double Tn_Dbar_proj_LAB, double Tn_Dbar_prod_LAB, int A_target=1, int N_target=0, int parametrization=ANDERSON)</td></tr>
+<tr class="memdesc:a985893e1da2505c93461e28b585f5c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energy-differential antideuteron cross section for non-annihilating antideuteron reactions on p, A.  <a href="#a985893e1da2505c93461e28b585f5c89">More...</a><br /></td></tr>
+<tr class="separator:a985893e1da2505c93461e28b585f5c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1456ba9a0ea5331286f2be953b7ec6f3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s.html#a1456ba9a0ea5331286f2be953b7ec6f3">Set_SELF_C_parameters_diMauro</a> (double *C)</td></tr>
 <tr class="memdesc:a1456ba9a0ea5331286f2be953b7ec6f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the parameter values of the di Mauro parametrization yourself.  <a href="#a1456ba9a0ea5331286f2be953b7ec6f3">More...</a><br /></td></tr>
 <tr class="separator:a1456ba9a0ea5331286f2be953b7ec6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -559,6 +562,75 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
     <tr><td class="paramname">int</td><td>N_target Number of neutrons in the target </td></tr>
     <tr><td class="paramname">int</td><td>parametrization Cross section parametrization, enum from[KORSMEIER_II (default), KORSMEIER_I, WINKLER, DI_MAURO_I, DI_MAURO_II] </td></tr>
     <tr><td class="paramname">int</td><td>coalescence Coalescence model, enum from[FIXED_P0 (default), ENERGY_DEP__VAN_DOETINCHEM], cf. inv_AA_Dbar_CM</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> Cross section in mbarn/GeV </dd></dl>
+
+</div>
+</div>
+<a id="a985893e1da2505c93461e28b585f5c89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a985893e1da2505c93461e28b585f5c89">&#9670;&nbsp;</a></span>dEn_DbarA_Dbar_LAB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CRXS::XS::dEn_DbarA_Dbar_LAB </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Tn_Dbar_proj_LAB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Tn_Dbar_prod_LAB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>A_target</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>N_target</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>parametrization</em> = <code>ANDERSON</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Energy-differential antideuteron cross section for non-annihilating antideuteron reactions on p, A. </p>
+<p>This cross section is integrated over all angles.</p>
+<p>There are two standard ways to approximated this cross section which has never been measured. The energy-differential shape of the <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> is either approximated by a the p+p-&gt;p+X reaction or or taken to be flat. In any case the cross section is normalized to the non-annihilating <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> of pbar+D-&gt;D+X (see <a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a6e7278bd542e86bf87a0945359e6274d" title="Interpolation of the non-annihilating pbar+D cross section. ">XS_definitions::nar_pbarD</a>).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">doulbe</td><td>Tn_Dbar_proj_LAB Kinetic energy per nucleus of the projectile antideuteron (in the LAB frame) </td></tr>
+    <tr><td class="paramname">double</td><td>Tn_Dbar_prod_LAB Kinetic energy per nucleus of the product antideuteron (in the LAB frame) </td></tr>
+    <tr><td class="paramname">int</td><td>A_target Mass number of the target </td></tr>
+    <tr><td class="paramname">int</td><td>N_target Number of neutrons in the target </td></tr>
+    <tr><td class="paramname">int</td><td>parametrization Way to approximate the cross section parametrization [ANDERSON, APPROX_1_OVER_T]</td></tr>
   </table>
   </dd>
 </dl>

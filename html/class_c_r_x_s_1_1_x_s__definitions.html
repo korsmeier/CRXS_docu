@@ -94,14 +94,15 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e217fb456ac9ab5152f099d9a2a21be"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a2e217fb456ac9ab5152f099d9a2a21be">totXS_TableToArray</a> (std::string file, double array[91][4])</td></tr>
 <tr class="memdesc:a2e217fb456ac9ab5152f099d9a2a21be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to read a simple text table.  <a href="#a2e217fb456ac9ab5152f099d9a2a21be">More...</a><br /></td></tr>
 <tr class="separator:a2e217fb456ac9ab5152f099d9a2a21be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbd2b4f73d1af90b6eb6651deef52cd4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#afbd2b4f73d1af90b6eb6651deef52cd4">totXS_Read</a> ()</td></tr>
-<tr class="memdesc:afbd2b4f73d1af90b6eb6651deef52cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bool to store whether the tables are alread read.  <a href="#afbd2b4f73d1af90b6eb6651deef52cd4">More...</a><br /></td></tr>
+<tr class="memitem:afbd2b4f73d1af90b6eb6651deef52cd4"><td class="memItemLeft" align="right" valign="top"><a id="afbd2b4f73d1af90b6eb6651deef52cd4"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#afbd2b4f73d1af90b6eb6651deef52cd4">totXS_Read</a> ()</td></tr>
+<tr class="memdesc:afbd2b4f73d1af90b6eb6651deef52cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to read all the total <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> tables. <br /></td></tr>
 <tr class="separator:afbd2b4f73d1af90b6eb6651deef52cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14b2782f11427f27df301e7695f920bb"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a14b2782f11427f27df301e7695f920bb">totXS_get_interpolation_loglin</a> (double x, double array[91][4])</td></tr>
 <tr class="memdesc:a14b2782f11427f27df301e7695f920bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to interpolate the the <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> tables. Interpolation is linear in log-log.  <a href="#a14b2782f11427f27df301e7695f920bb">More...</a><br /></td></tr>
 <tr class="separator:a14b2782f11427f27df301e7695f920bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ab61b6e23c0ab6326e8e270611afd96"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a5ab61b6e23c0ab6326e8e270611afd96">tot_pbarp</a> (double T_pbar)</td></tr>
-<tr class="memdesc:a5ab61b6e23c0ab6326e8e270611afd96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array to store the non-annihilation pbar+D <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a>; column 0: T_pbar in GeV, column 1: <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> in mbarn.  <a href="#a5ab61b6e23c0ab6326e8e270611afd96">More...</a><br /></td></tr>
+<tr class="memdesc:a5ab61b6e23c0ab6326e8e270611afd96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolation of the total pbar+p cross section.  <a href="#a5ab61b6e23c0ab6326e8e270611afd96">More...</a><br /></td></tr>
 <tr class="separator:a5ab61b6e23c0ab6326e8e270611afd96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6713e5d47bc116cb2e596d7c1b962d1b"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a6713e5d47bc116cb2e596d7c1b962d1b">el_pbarp</a> (double T_pbar)</td></tr>
 <tr class="memdesc:a6713e5d47bc116cb2e596d7c1b962d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolation of the elastic pbar+p cross section.  <a href="#a6713e5d47bc116cb2e596d7c1b962d1b">More...</a><br /></td></tr>
@@ -155,22 +156,24 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><b>fMass_deuter
 static double&#160;</td><td class="memItemRight" valign="bottom"><b>fMass_helium3</b> = 0.9382720813*3</td></tr>
 <tr class="separator:a2080fa313cdf17dda4e3968f54c65e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6117c7890da8a6bf578b3cc49d3f3ae"><td class="memItemLeft" align="right" valign="top"><a id="aa6117c7890da8a6bf578b3cc49d3f3ae"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>f_totXS_IsRead</b> = false</td></tr>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#aa6117c7890da8a6bf578b3cc49d3f3ae">f_totXS_IsRead</a> = false</td></tr>
+<tr class="memdesc:aa6117c7890da8a6bf578b3cc49d3f3ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bool to store whether the tables are alread read. <br /></td></tr>
 <tr class="separator:aa6117c7890da8a6bf578b3cc49d3f3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68cd9a2fd2c135c638d790e3f774d1a4"><td class="memItemLeft" align="right" valign="top"><a id="a68cd9a2fd2c135c638d790e3f774d1a4"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>fXS__tot_pbarp</b> [91][4]</td></tr>
+static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a68cd9a2fd2c135c638d790e3f774d1a4">fXS__tot_pbarp</a> [91][4]</td></tr>
+<tr class="memdesc:a68cd9a2fd2c135c638d790e3f774d1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array to store the total pbar+p <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a>; column 0: T_pbar in GeV, column 1: <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> in mbarn. <br /></td></tr>
 <tr class="separator:a68cd9a2fd2c135c638d790e3f774d1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dd4913cb617faf50ec7b1fcbef4cf19"><td class="memItemLeft" align="right" valign="top"><a id="a8dd4913cb617faf50ec7b1fcbef4cf19"></a>
 static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a8dd4913cb617faf50ec7b1fcbef4cf19">fXS__el_pbarp</a> [91][4]</td></tr>
-<tr class="memdesc:a8dd4913cb617faf50ec7b1fcbef4cf19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array to store the total pbar+p <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a>; column 0: T_pbar in GeV, column 1: <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> in mbarn. <br /></td></tr>
+<tr class="memdesc:a8dd4913cb617faf50ec7b1fcbef4cf19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array to store the elastic pbar+p <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a>; column 0: T_pbar in GeV, column 1: <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> in mbarn. <br /></td></tr>
 <tr class="separator:a8dd4913cb617faf50ec7b1fcbef4cf19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a607f477b6b582244626fc99a3c30f86c"><td class="memItemLeft" align="right" valign="top"><a id="a607f477b6b582244626fc99a3c30f86c"></a>
 static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a607f477b6b582244626fc99a3c30f86c">fXS__tot_pbarD</a> [91][4]</td></tr>
-<tr class="memdesc:a607f477b6b582244626fc99a3c30f86c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array to store the elastic pbar+p <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a>; column 0: T_pbar in GeV, column 1: <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> in mbarn. <br /></td></tr>
+<tr class="memdesc:a607f477b6b582244626fc99a3c30f86c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array to store the total pbar+D <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a>; column 0: T_pbar in GeV, column 1: <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> in mbarn. <br /></td></tr>
 <tr class="separator:a607f477b6b582244626fc99a3c30f86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9896f88f427a85151720b4e97835686e"><td class="memItemLeft" align="right" valign="top"><a id="a9896f88f427a85151720b4e97835686e"></a>
 static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_x_s_1_1_x_s__definitions.html#a9896f88f427a85151720b4e97835686e">fXS__nar_pbarD</a> [91][4]</td></tr>
-<tr class="memdesc:a9896f88f427a85151720b4e97835686e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array to store the total pbar+D <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a>; column 0: T_pbar in GeV, column 1: <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> in mbarn. <br /></td></tr>
+<tr class="memdesc:a9896f88f427a85151720b4e97835686e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array to store the non-annihilation pbar+D <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a>; column 0: T_pbar in GeV, column 1: <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> in mbarn. <br /></td></tr>
 <tr class="separator:a9896f88f427a85151720b4e97835686e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abada8c24c8a893ece1a62176360ac500"><td class="memItemLeft" align="right" valign="top"><a id="abada8c24c8a893ece1a62176360ac500"></a>
 static double&#160;</td><td class="memItemRight" valign="bottom"><b>Korsmeier_I_C1_to_C11</b> [12] = { -1, 3.50193e+00, 5.58513e+00, 3.99553e-02, -2.50716e-01, 2.65053e+00, 3.78145e-02, 4.29478e-02, 2.69520e+00, 0.0, 0.0, 0.0 }</td></tr>
@@ -193,6 +196,9 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><b>diMauro_I_C1
 <tr class="memitem:a6431b1aad36c2b08d59d255f262dd00f"><td class="memItemLeft" align="right" valign="top"><a id="a6431b1aad36c2b08d59d255f262dd00f"></a>
 static double&#160;</td><td class="memItemRight" valign="bottom"><b>diMauro_II_C1_to_C16</b> [17] = { -1, 0.00, 0.00, 0., 0.0, 0., 0., 0., 0., 0., 0, 0., 0., 0., 0.6, 100., 0.0 }</td></tr>
 <tr class="separator:a6431b1aad36c2b08d59d255f262dd00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79447bbd471b082c16d402db74684c32"><td class="memItemLeft" align="right" valign="top"><a id="a79447bbd471b082c16d402db74684c32"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>Anderson_C1_to_C16</b> [17] = { -1, 0.00, 0.00, 0., 0.0, 0., 0., 0., 0., 0., 0, 0., 0., 0., 0.0, 100., 0.0 }</td></tr>
+<tr class="separator:a79447bbd471b082c16d402db74684c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1399e6d6175840ccfd7e57ed918ef5c"><td class="memItemLeft" align="right" valign="top"><a id="ac1399e6d6175840ccfd7e57ed918ef5c"></a>
 static double&#160;</td><td class="memItemRight" valign="bottom"><b>Korsmeier_I_D1_to_D2</b> [3] = { -1, 0.825, 0.167 }</td></tr>
 <tr class="separator:ac1399e6d6175840ccfd7e57ed918ef5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -763,8 +769,7 @@ edited by S. H., Vol. 12B (SpringerMaterials, 1988).
 </table>
 </div><div class="memdoc">
 
-<p>Array to store the non-annihilation pbar+D <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a>; column 0: T_pbar in GeV, column 1: <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> in mbarn. </p>
-<p>Interpolation of the total pbar+p cross section.</p>
+<p>Interpolation of the total pbar+p cross section. </p>
 <p>Hand-fitted curve to the data collected by the Particle Data Group (PDG). The data and tables of the hand-fitted curve are stored in &lt;CRXS dir&gt;=""&gt;/cpp/data</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -855,34 +860,6 @@ edited by S. H., Vol. 12B (SpringerMaterials, 1988).
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>double Interpolted value </dd></dl>
-
-</div>
-</div>
-<a id="afbd2b4f73d1af90b6eb6651deef52cd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbd2b4f73d1af90b6eb6651deef52cd4">&#9670;&nbsp;</a></span>totXS_Read()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CRXS::XS_definitions::totXS_Read </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Bool to store whether the tables are alread read. </p>
-<p>Function to read all the total <a class="el" href="class_c_r_x_s_1_1_x_s.html">XS</a> tables. </p>
 
 </div>
 </div>
